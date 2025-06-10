@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>人と自然と馬が出逢う場所。</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            font-family: 'Noto Serif JP', serif;
+            margin: 0;
+            color: #222;
+            background: #f5f3ee;
+        }
+        .bg-img {
+            position: fixed;
+            top: 0; left: 0;
+            width: 100vw; height: 100vh;
+            object-fit: cover;
+            z-index: 0;
+            filter: brightness(0.7) blur(1px);
+        }
+        .overlay {
+            position: fixed;
+            top: 0; left: 0;
+            width: 100vw; height: 100vh;
+            background: rgba(245, 243, 238, 0.35);
+            z-index: 1;
+        }
+        header, main, footer {
+            position: relative;
+            z-index: 2;
+        }
+        header {
+            background: rgba(255, 255, 255, 0.35);
+            border-bottom: 1px solid #e0ded8;
+            text-align: center;
+            padding: 3em 1em 2em 1em;
+        }
+        header h1 {
+            font-size: 2.2em;
+            letter-spacing: 0.12em;
+            font-weight: 700;
+            color: #5e4326;
+            text-shadow: 0 2px 8px #ede9e0;
+            background: rgba(255,255,255,0.3);
+            display: inline-block;
+            padding: 0.5em 1em;
+            border-radius: 8px;
+        }
+        main {
+            max-width: 700px;
+            margin: 2em auto;
+            background: rgba(255,255,255,0.86);
+            padding: 2em 2em;
+            border-radius: 14px;
+            border: 1px solid #e0ded8;
+            box-shadow: 0 4px 12px rgba(90,60,30,0.06);
+        }
+        .gaiyou h2 {
+            font-size: 1.4em;
+            font-weight: 700;
+            color: #7c5d3b;
+            border-bottom: 1px solid #e0ded8;
+            margin-bottom: 0.5em;
+            letter-spacing: 0.07em;
+        }
+        .gaiyou p {
+            font-size: 1.1em;
+            line-height: 2;
+            letter-spacing: 0.05em;
+            color: #3b2d19;
+        }
+        footer {
+            text-align: center;
+            color: #8d857c;
+            background: transparent;
+            padding: 2em 0 1em 0;
+            font-size: 0.9em;
+        }
+    </style>
+</head>
+<body>
+    <!-- フリー素材背景画像 -->
+    <img class="bg-img" src="https://cdn.pixabay.com/photo/2017/01/20/00/30/forest-1993641_1280.jpg" alt="森の風景">
+    <div class="overlay"></div>
+    <header>
+        <h1>人と自然と馬が出逢う場所。</h1>
+    </header>
+    <main>
+        <section class="gaiyou">
+            <h2>概要</h2>
+            <p>
+                この場所は、人、自然、そして馬が穏やかにふれあい、共に過ごすための空間です。<br>
+                四季折々の自然の中で、心豊かな時間をお過ごしください。
+            </p>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2025 人と自然と馬が出逢う場所。</p>
+    </footer>
+</body>
+</html>
